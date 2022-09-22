@@ -75,7 +75,7 @@ h6 {
   font-weight: inherit;
 }
 
-/*--------------------*/
+/*---------header-----------*/
 :root {
   --primary-color: #cd6326;
   --light-color: #f7f7f7;
@@ -215,10 +215,10 @@ body {
     height: 40px;
   }
 }
-/*--------------------*/
+/*---------survival hero-----------*/
 .survival {
   background: url(./assets/herobg.jpg) no-repeat center top;
-  background-size: contain;
+  background-size: cover;
   height: 780px;
   margin-top: -80px;
   padding-top: 200px;
@@ -285,11 +285,147 @@ body {
     padding: 4px 13px;
   }
 }
-/*--------------------*/
+/*----------articles----------*/
 .articles {
+  background-color: #cccccc;
+  padding-top: 120px;
+  padding-bottom: 40px;
 }
+
+.articles_container {
+}
+.articles_title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  color: var(--darck-grey-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.articles_subtitle {
+}
+.subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--light-gray-color);
+  margin-bottom: 120px;
+  text-align: center;
+}
+.slider {
+}
+
+.articles_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.articles_item {
+}
+.articles_link {
+  position: relative;
+}
+.link {
+}
+.articles_content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 245px 20px 40px 20px;
+}
+.articles_name {
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--light-color);
+}
+.articles_txt {
+  font-size: 17px;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--light-color);
+}
+
+@media (max-width: 835px) {
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+  .articles_title {
+    font-size: 30px;
+    margin-bottom: 5px;
+    line-height: 22px;
+  }
+  .articles {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 535px) {
+  .articles_link img {
+    width: 200px;
+    height: 260px;
+  }
+  .articles_content {
+    padding: 145px 20px 40px 20px;
+  }
+}
+@media (max-width: 335px) {
+  .articles_link img {
+    height: 260px;
+  }
+  .articles_list .slick-arrow {
+    width: 17px;
+    height: 30px;
+  }
+  .articles_content {
+    display: none;
+  }
+}
+/*---------slick slider-----------*/
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+.articles_list {
+  position: relative;
+  padding: 0 62px;
+}
+/* Стрелка */
+.articles_list .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 27px;
+  height: 40px;
+  margin-top: -20px;
+}
+/* Стрелка влево */
+.articles_list .slick-arrow.slick-prev {
+  left: 0;
+  font-size: 0;
+  background: url("./assets/left.svg") 0 0 / 100% no-repeat;
+}
+/* Стрелка вправо */
+.articles_list .slick-arrow.slick-next {
+  right: 0;
+  font-size: 0;
+  background: url("./assets/right.svg") 0 0 / 100% no-repeat;
+}
+
 /*--------------------*/
 .notificate {
 }
+/*--------------------*/
 .Footer {
 }
