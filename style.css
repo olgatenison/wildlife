@@ -113,9 +113,7 @@ body {
   flex: 1 1 auto;
 }
 .header {
-  background: url(./assets/herobg.jpg) no-repeat center top;
-  background-size: contain;
-  height: 780px;
+  z-index: 2;
 }
 .header_container {
   align-items: center;
@@ -126,7 +124,7 @@ body {
 .header_logo {
   display: flex;
 }
-.header_logo h1:hover {
+.header_logo p:hover {
   color: var(--primary-color);
   text-decoration: underline;
 }
@@ -167,7 +165,7 @@ body {
 .header_button {
   padding: 12px 23px;
   border: 2px solid var(--primary-color);
-  border-radius: 5px;
+
   background-color: initial;
 }
 .header_button:hover {
@@ -180,6 +178,7 @@ body {
   line-height: 27px;
   color: var(--light-color);
   cursor: pointer;
+  border-radius: 5px;
 }
 @media (max-width: 767.98px) {
   .header_navigation_item:not(:last-child) {
@@ -189,7 +188,7 @@ body {
     font-size: 23px;
   }
 }
-@media (max-width: 608px) {
+@media (max-width: 610px) {
   .logo_txt {
     display: none;
   }
@@ -218,10 +217,78 @@ body {
 }
 /*--------------------*/
 .survival {
+  background: url(./assets/herobg.jpg) no-repeat center top;
+  background-size: contain;
+  height: 780px;
+  margin-top: -80px;
+  padding-top: 200px;
+}
+.survival_container {
+  display: flex;
+  flex-direction: column;
+}
+.survival_title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  margin-bottom: 50px;
+}
+.survival_txt {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--light-color);
+  max-width: 274px;
+  margin-bottom: 50px;
+}
+.survival_button {
+  background-color: var(--primary-color);
+  padding: 16px 42px;
+  max-width: 160px;
+}
+.survival_button:hover {
+  background-color: var(--hover-orange-color);
+}
+@media (max-width: 1116px) {
+  .survival {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 835px) {
+  .survival_title {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .survival_txt {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+  .survival {
+    height: 400px;
+    padding-top: 100px;
+    background-size: cover;
+  }
+}
+@media (max-width: 610px) {
+  .survival {
+    height: 400px;
+    padding-top: 100px;
+    background-size: cover;
+  }
+  .survival_button {
+    padding: 4px 13px;
+  }
 }
 /*--------------------*/
 .articles {
 }
+/*--------------------*/
 .notificate {
 }
 .Footer {
