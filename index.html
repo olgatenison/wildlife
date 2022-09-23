@@ -18,8 +18,11 @@
     <div class="wrapper">
       <header class="header">
         <div class="container header_container">
-          <a href="" class="header_logo">
-            <img src="./assets/logo.svg" alt="wildlife logo" class="logo_img" />
+          <a href="" class="header_logo logo">
+            <svg class="logo_img">
+              <use href="./assets/sprite.svg#icon-logo">
+              </use>
+              </svg>
             <p class="logo_txt">wildlife</p>
           </a>
           <nav class="header_navigation">
@@ -31,7 +34,10 @@
                 <a href="">Contacts</a>
               </li>
               <li class="header_navigation_item">
-                <img src="./assets/serach.svg" alt="search" />
+                  <svg class="serach_img">
+                  <use href="./assets/sprite.svg#icon-serach">
+                  </use>
+                  </svg>
               </li>
               <li class="header_navigation_item">
                 <button class="header_button button">Sign in</button>
@@ -235,13 +241,87 @@
 
         <section class="notificate">
           <div class="container notificate_container">
-            <h2 class="notificate_title"></h2>
-            <p class="notificate_subtitle subtitle"></p>
-            <form action=""></form>
+            <h2 class="notificate_title">Get notified</h2>
+            <p class="notificate_subtitle subtitle">
+              Get notified about new amazing articles
+            </p>
+            <form name="notification_form" autocomplete="on" novalidate>
+              <label>
+                <input type="email" name="email" placeholder="Email" required />
+              </label>
+              <button type="submit" class="button notificate_button">
+                Submit
+              </button>
+            </form>
           </div>
         </section>
       </main>
-      <footer class="Footer"><div class="container">foo</div></footer>
+
+      <footer class="footer">
+        <div class="container footer_container">  
+        <div class="footer_logo_wrapper">  
+
+          <a href="" class="footer_logo logo">
+            <svg class="logo_img">
+            <use href="./assets/sprite.svg#icon-logo">
+            </use>
+            </svg>
+          <p class="logo_txt">wildlife</p>
+          </a>
+        </div> 
+
+        <div class="footer_navigation">
+          <ul class="footer_navigation_list">
+            <li class="footer_navigation_item">
+              <a href="">Articles</a>
+            </li>
+            <li class="footer_navigation_item">
+              <a href="">About us</a>
+            </li>
+            <li class="footer_navigation_item">
+              <a href="">Learn more</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_socials">
+          <ul class="footer_socials_list">
+            <li class="footer_socials_item">
+              <a href="" class="footer_socials_link socials_link">
+                <svg class="soscial_icon">
+                  <use href="./assets/sprite.svg#icon-facebook">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer_socials_item">
+              <a href="" class="footer_socials_link socials_link">
+                <svg class="soscial_icon">
+                  <use href="./assets/sprite.svg#icon-inst">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer_socials_item">
+              <a href="" class="footer_socials_link socials_link">
+                <svg class="soscial_icon">
+                  <use href="./assets/sprite.svg#icon-pintrest">
+                  </use>
+                </svg>
+              </a>
+            </li> 
+            <li class="footer_socials_item">
+              <a href="" class="footer_socials_link socials_link">
+                <svg class="soscial_icon">
+                  <use href="./assets/sprite.svg#icon-telegram">
+                  </use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
