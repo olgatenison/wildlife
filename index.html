@@ -55,7 +55,7 @@
               What this means is that we exist to help protect our environment
               and do in numbers of ways. You can save the planet by donation.
             </p>
-            <button class="survival_button button">Donate</button>
+            <button class="survival_button button" data-modal-open>Donate</button>
           </div>
         </section>
 
@@ -322,6 +322,33 @@
         </div>
 
       </footer>
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" data-modal-close>
+            <svg class="close_btn" >
+            <use href="./assets/sprite.svg#icon-cross" data-modal-close>
+            </use>
+          </svg></button>
+          <div class="modal_wrapper">
+            <img src="./assets/thanks.png" alt="thank you!" class="modal_img">
+             
+            <form class="modal_form">
+            <label>
+               <input type="donetion" name="donation" autofocus placeholder="Enter the donation amount, USD"class="modal_input"/>
+            </label>
+            <label>
+               <input type="text" name="username" placeholder="Your name"class="modal_input"/>
+            </label>
+            <label>
+                <input type="email" name="email" placeholder="Your email"class="modal_input"/>
+            </label>
+            <button type="submit" class="button modal_btn">Submit</button>
+            </form>
+            <h3 class="modal_subtitle subtitle">Thank you for saving our planet by donation. We will contact you!</h3>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
