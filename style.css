@@ -464,7 +464,7 @@ body {
 .articles_list .slick-arrow {
   position: absolute;
   top: 50%;
-  z-index: 10;
+  z-index: 3;
   width: 27px;
   height: 40px;
   margin-top: -20px;
