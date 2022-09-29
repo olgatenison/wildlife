@@ -24,6 +24,7 @@
     />
 
     <title>wildlife</title>
+
   </head>
   <body>
     <div class="wrapper">
@@ -45,10 +46,20 @@
                 <a href="#sec4">Contacts</a>
               </li>
               <li class="header_navigation_item">
-                  <svg class="serach_img">
-                  <use href="./assets/sprite.svg#icon-serach">
-                  </use>
-                  </svg>
+                <div class="search">
+                  <div class="search_icon"> 
+                      <svg class="serach_img">
+                      <use href="./assets/sprite.svg#icon-serach">
+                      </use>
+                      </svg>
+                  </div>
+                  <div class="search_input">
+                    <input type="text" placeholder="search" id="mysearch" >
+                  </div>
+                  <span class="search_clear" onclick="document.getElementById('mysearch').value = ''">                 
+                  </span>
+                </div>
+                 
               </li>
               <li class="header_navigation_item">
                 <button class="header_button button">Sign in</button>
@@ -373,7 +384,7 @@
             </p>
             <form name="notification_form" autocomplete="on" novalidate>
               <label>
-                <input type="email" name="email" placeholder="Email" required />
+                <input type="email" name="email" placeholder="Email" required class='notification_form_input'/>
               </label>
               <button type="submit" class="button notificate_button">
                 Submit
@@ -469,16 +480,18 @@
             <label>
                 <input type="email" name="email" placeholder="Your email"class="modal_input"/>
             </label>
-            <button type="submit" class="button modal_btn">Submit</button>
+            <button type="submit" class="button modal_btn">Donate</button>
             </form>
             <h3 class="modal_subtitle subtitle">Thank you for saving our planet by donation. We will contact you!</h3>
           </div>
         </div>
       </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/search.js"></script>
   </body>
 </html>
