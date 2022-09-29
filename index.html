@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto&display=swap"
       rel="stylesheet"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/fav/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
     <title>wildlife</title>
@@ -19,7 +30,7 @@
       <header class="header">
         <div class="container header_container">
           <a href="" class="header_logo logo">
-            <svg class="logo_img">
+            <svg class="logo_img header_logo_img">
               <use href="./assets/sprite.svg#icon-logo">
               </use>
               </svg>
@@ -28,10 +39,10 @@
           <nav class="header_navigation">
             <ul class="header_navigation_list">
               <li class="header_navigation_item">
-                <a href="">Blog</a>
+                <a href="#sec1">Blog</a>
               </li>
               <li class="header_navigation_item">
-                <a href="">Contacts</a>
+                <a href="#sec4">Contacts</a>
               </li>
               <li class="header_navigation_item">
                   <svg class="serach_img">
@@ -48,19 +59,19 @@
       </header>
 
       <main class="main">
-        <section class="survival">
+        <section class="survival" id="sec2">
           <div class="container survival_container">
-            <h1 class="survival_title">Survival</h1>
-            <p class="survival_txt">
+            <h1 class="survival_title animate__animated animate__fadeInUp">Survival</h1>
+            <p class="survival_txt animate__animated animate__fadeInUp">
               What this means is that we exist to help protect our environment
               and do in numbers of ways. You can save the planet by donation.
             </p>
-            <button class="survival_button button" data-modal-open>Donate</button>
+            <button class="survival_button button animate__animated animate__fadeInUp" data-modal-open>Donate</button>
           </div>
         </section>
 
-        <section class="articles">
-          <div class="container articles_container">
+        <section class="articles" id="sec1">
+          <div class="container articles_container" >
             <h2 class="articles_title">Latest articles</h2>
             <p class="articles_subtitle subtitle">
               Breaking news from the wild
@@ -74,7 +85,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <img class="articles_link_img"
                       src="./assets/dear.jpg"
                       alt="deer"
                       width="300"
@@ -95,7 +106,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <img class="articles_link_img"
                       src="./assets/squirrel.jpg"
                       alt="deer"
                       width="300"
@@ -116,7 +127,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <img class="articles_link_img"
                       src="./assets/bird.jpg"
                       alt="deer"
                       width="300"
@@ -137,7 +148,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <img class="articles_link_img"
                       src="./assets/bear.jpg"
                       alt="bear"
                       width="300"
@@ -158,7 +169,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <img class="articles_link_img"
                       src="./assets/wolf.jpg"
                       alt="wolf"
                       width="300"
@@ -179,7 +190,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <img class="articles_link_img"
                       src="./assets/rabbit.jpg"
                       alt="dog"
                       width="300"
@@ -200,7 +211,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <img class="articles_link_img"
                       src="./assets/koala.jpg"
                       alt="koala"
                       width="300"
@@ -221,7 +232,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <img class="articles_link_img"
                       src="./assets/raccoon.jpg"
                       alt="raccoon"
                       width="300"
@@ -235,11 +246,126 @@
                   </a>
                 </li>
               </ul>
+            </div>           
+            
+            <div class="slider_list_2">
+              <ul class="articles_list_2">
+                <li class="articles_item_2">
+                  <a
+                    class="articles_link_2 link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                      
+                      <h3 class="articles_name">Deer</h3>
+                      <p class="articles_txt">Naturalist investigation</p>
+                  </a>
+                </li>
+
+                <li class="articles_item_2">
+                  <a
+                    class="articles_link_2 link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                      <h3 class="articles_name">Squirrel</h3>
+                      <p class="articles_txt">Kamikaze squirrels</p>
+                   
+                  </a>
+                </li>
+
+                <li class="articles_item_2">
+                  <a
+                    class="articles_link_2 link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                                 
+                      <h3 class="articles_name">Bird</h3>
+                      <p class="articles_txt">Birds Fight club</p>
+                    
+                  </a>
+                </li>
+
+                <li class="articles_item_2">
+                  <a
+                    class="articles_link_2 link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                  
+                      <h3 class="articles_name">Bear</h3>
+                      <p class="articles_txt">Birds Fight club</p>
+                   
+                  </a>
+                </li>
+
+                <li class="articles_item_2">
+                  <a
+                    class="articles_link_2 link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                     
+                      <h3 class="articles_name">Wolf</h3>
+                      <p class="articles_txt">Birds Fight club</p>
+                   
+                  </a>
+                </li>
+
+                <li class="articles_item_2">
+                  <a
+                    class="articles_link_2 link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                 
+                      <h3 class="articles_name">Rabbit</h3>
+                      <p class="articles_txt">Birds Fight club</p>
+                  
+                  </a>
+                </li>
+
+                <li class="articles_item_2">
+                  <a
+                    class="articles_link_2 link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+       
+                      <h3 class="articles_name">Koala</h3>
+                      <p class="articles_txt">Birds Fight club</p>
+                  
+                  </a>
+                </li>
+
+                <li class="articles_item_2">
+                  <a
+                    class="articles_link_2 link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+          
+                      <h3 class="articles_name">Raccoon</h3>
+                      <p class="articles_txt">Birds Fight club</p>
+                    
+                  </a>
+                </li>
+              </ul>
             </div>
+
           </div>
         </section>
 
-        <section class="notificate">
+        <section class="notificate" id="sec3">
           <div class="container notificate_container">
             <h2 class="notificate_title">Get notified</h2>
             <p class="notificate_subtitle subtitle">
@@ -257,7 +383,7 @@
         </section>
       </main>
 
-      <footer class="footer">
+      <footer class="footer" id="sec4">
         <div class="container footer_container">  
         <div class="footer_logo_wrapper">  
 
@@ -273,13 +399,13 @@
         <div class="footer_navigation">
           <ul class="footer_navigation_list">
             <li class="footer_navigation_item">
-              <a href="">Articles</a>
+              <a href="#sec1">Articles</a>
             </li>
             <li class="footer_navigation_item">
-              <a href="">About us</a>
+              <a href="#sec2">About us</a>
             </li>
             <li class="footer_navigation_item">
-              <a href="">Learn more</a>
+              <a href="#sec3">Learn more</a>
             </li>
           </ul>
         </div>
@@ -335,7 +461,7 @@
              
             <form class="modal_form">
             <label>
-               <input type="donetion" name="donation" autofocus placeholder="Enter the donation amount, USD"class="modal_input"/>
+               <input type="donetion" name="donation" autofocus placeholder="Enter the donation amount"class="modal_input"/>
             </label>
             <label>
                <input type="text" name="username" placeholder="Your name"class="modal_input"/>

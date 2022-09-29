@@ -16,6 +16,12 @@ $(document).ready(function () {
           slidesToShow: 1,
         },
       },
+      {
+        breakpoint: 340,
+        settings: {
+          arrows: false,
+        },
+      },
     ],
   });
 });
